@@ -4,7 +4,7 @@
   <%= Spree.t(:active_shipping_settings) %>
 <% end %>
 
-<%= form_tag admin_active_shipping_settings_path, :method => :put  do |form| %>
+<%= form_tag spree.admin_active_shipping_settings_path, :method => :put  do |form| %>
   <div id="preferences" data-hook>
     <fieldset class="general no-border-top">
       <div class="row">
@@ -81,7 +81,7 @@
         </div>
       </div>
 
-      <%= render partial: 'spree/admin/shared/edit_resource_links', locals: { collection_url: edit_admin_active_shipping_settings_url } %>
+      <%= render partial: 'spree/admin/shared/edit_resource_links', locals: { collection_url: spree.edit_admin_active_shipping_settings_url } %>
 
     </fieldset>
   </div>

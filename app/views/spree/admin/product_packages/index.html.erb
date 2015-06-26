@@ -1,5 +1,5 @@
 <% content_for :page_actions do %>
-  <%= button_link_to Spree.t(:new_package), new_admin_product_product_package_url(@product), { :class => "btn-success", :icon => 'add', :id => 'new_product_package_link' } %>
+  <%= button_link_to Spree.t(:new_package), spree.new_admin_product_product_package_url(@product), { :class => "btn-success", :icon => 'add', :id => 'new_product_package_link' } %>
 <% end %>
 
 <% content_for :head do %>
